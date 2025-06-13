@@ -6,7 +6,7 @@
 /*   By: gjose-fr <gjose-fr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 11:06:36 by g24force          #+#    #+#             */
-/*   Updated: 2025/06/13 13:38:53 by gjose-fr         ###   ########.fr       */
+/*   Updated: 2025/06/13 16:46:59 by gjose-fr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,8 @@ void	pb(t_stack *stack_a, t_stack *stack_b);
 
 // rotate.c
 void	ra(t_stack *stack);
+void	rb(t_stack *stack);
+void	rr(t_stack *stack_a, t_stack *stack_b);
 
 // swap.c
 void	sa(t_stack *stack);

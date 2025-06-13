@@ -6,7 +6,7 @@
 /*   By: gjose-fr <gjose-fr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 11:53:38 by g24force          #+#    #+#             */
-/*   Updated: 2025/06/13 13:38:40 by gjose-fr         ###   ########.fr       */
+/*   Updated: 2025/06/13 16:44:39 by gjose-fr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,26 @@ void	ra(t_stack *stack)
 		return ;
 	initial_head = stack->head;
 	stack->head = initial_head->next;
+	stack->tail->next = initial_head;
 	stack->tail = initial_head;
 	stack->tail->next = NULL;
+}
+
+void	rb(t_stack *stack)
+{
+	t_node *initial_head;
+
+	if (stack->count < 2)
+		return ;
+	initial_head = stack->head;
+	stack->head = initial_head->next;
+	stack->tail->next = initial_head;
+	stack->tail = initial_head;
+	stack->tail->next = NULL;
+}
+
+void	rr(t_stack *stack_a, t_stack *stack_b)
+{
+	ra(stack_a);
+	rb(stack_b);
 }
