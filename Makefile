@@ -32,7 +32,7 @@ clean:
 	$(RM) $(OBJS) $(OBJS)
 
 fclean: clean
-	$(RM) $(S_NAME) $(C_NAME) $(LIBFT)
+	$(RM) $(NAME) $(LIBFT)
 	$(MAKE) fclean -C $(LIBFT_DIR)
 
 re: fclean
