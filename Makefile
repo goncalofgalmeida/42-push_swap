@@ -9,7 +9,8 @@ OPERATIONS_DIR = $(SRCS_DIR)/operations
 SRCS = ./push_swap.c \
 	$(OPERATIONS_DIR)/push.c \
 	$(OPERATIONS_DIR)/rotate.c \
-	$(OPERATIONS_DIR)/swap.c
+	$(OPERATIONS_DIR)/swap.c \
+	./del.c
 
 OBJS = $(SRCS:.c=.o)
 
