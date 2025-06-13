@@ -6,14 +6,13 @@
 /*   By: gjose-fr <gjose-fr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 10:38:46 by gjose-fr          #+#    #+#             */
-/*   Updated: 2025/04/01 12:34:36 by gjose-fr         ###   ########.fr       */
+/*   Updated: 2025/06/13 12:48:06 by gjose-fr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h> // confirmar que não é necessária
 # include <string.h>
 # include <stdlib.h>
 # include <stdint.h>
