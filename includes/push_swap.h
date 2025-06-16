@@ -6,7 +6,7 @@
 /*   By: gjose-fr <gjose-fr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 11:06:36 by g24force          #+#    #+#             */
-/*   Updated: 2025/06/16 13:28:21 by gjose-fr         ###   ########.fr       */
+/*   Updated: 2025/06/16 16:46:06 by gjose-fr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 # define PUSH_SWAP_H
 
 # include "../libft/libft.h"
+#include <limits.h> //posso manter esta?
 
 // TODO: DELETE NAO TE ESQUECAS
-# include <stdio.h> 
+# include <stdio.h>
 
 typedef struct s_node
 {
@@ -61,5 +62,10 @@ void	ss(t_stack *stack_a, t_stack *stack_b);
 void	stack_add_top(t_stack *stack, t_node *new);
 t_node	*stack_get_last(t_stack *stack);
 t_node	*stack_get_second_to_last(t_stack *stack);
+
+// 		***SORTING AND ALGORITHMS***
+
+// sorting.c
+int	is_sorted(t_stack *stack);
 
 #endif

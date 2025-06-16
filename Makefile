@@ -5,6 +5,7 @@ LIBFT = ./libft/libft.a
 
 SRCS_DIR = ./srcs
 OPERATIONS_DIR = $(SRCS_DIR)/operations
+SORTING_DIR = $(SRCS_DIR)/sorting
 
 SRCS = ./push_swap.c \
 	$(OPERATIONS_DIR)/op_utils.c \
@@ -12,6 +13,7 @@ SRCS = ./push_swap.c \
 	$(OPERATIONS_DIR)/reverse.c \
 	$(OPERATIONS_DIR)/rotate.c \
 	$(OPERATIONS_DIR)/swap.c \
+	$(SORTING_DIR)/sorting.c \
 	./del.c
 
 OBJS = $(SRCS:.c=.o)

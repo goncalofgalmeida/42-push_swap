@@ -6,7 +6,7 @@
 /*   By: gjose-fr <gjose-fr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 11:03:48 by g24force          #+#    #+#             */
-/*   Updated: 2025/06/13 15:38:37 by gjose-fr         ###   ########.fr       */
+/*   Updated: 2025/06/16 16:57:56 by gjose-fr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,17 @@ int	main(int argc, char **argv)
 	pa(&stack_a, &stack_b);
 	pa(&stack_a, &stack_b);
 	print_stack(&stack_a);
-	ra(&stack_a);
-	printf("\nOperation: ra\n");
+	rra(&stack_a);
+	printf("\nOperation: rra\n");
 	print_stack(&stack_a);
-	ra(&stack_a);;
-	printf("\nOperation: ra\n");
+	rra(&stack_a);;
+	printf("\nOperation: rra\n");
+	print_stack(&stack_a);
+	rra(&stack_a);
+	printf("\nOperation: rra\n");
+	print_stack(&stack_a);
+	rra(&stack_a);;
+	printf("\nOperation: rra\n");
 	print_stack(&stack_a);
 	return (0);
 }
