@@ -57,4 +57,9 @@ void	sa(t_stack *stack);
 void	sb(t_stack *stack);
 void	ss(t_stack *stack_a, t_stack *stack_b);
 
+// op_utils.c
+void	stack_add_top(t_stack *stack, t_node *new);
+t_node	*stack_get_last(t_stack *stack);
+t_node	*stack_get_second_to_last(t_stack *stack);
+
 #endif

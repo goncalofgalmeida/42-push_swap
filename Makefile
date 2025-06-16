@@ -7,6 +7,7 @@ SRCS_DIR = ./srcs
 OPERATIONS_DIR = $(SRCS_DIR)/operations
 
 SRCS = ./push_swap.c \
+	$(OPERATIONS_DIR)/op_utils.c \
 	$(OPERATIONS_DIR)/push.c \
 	$(OPERATIONS_DIR)/reverse.c \
 	$(OPERATIONS_DIR)/rotate.c \

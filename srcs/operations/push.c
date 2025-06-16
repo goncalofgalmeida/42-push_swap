@@ -6,18 +6,11 @@
 /*   By: gjose-fr <gjose-fr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 11:53:32 by g24force          #+#    #+#             */
-/*   Updated: 2025/06/13 13:02:47 by gjose-fr         ###   ########.fr       */
+/*   Updated: 2025/06/16 12:10:25 by gjose-fr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/push_swap.h"
-
-// TODO: move function somewhere else
-void	stack_add_top(t_stack *stack, t_node *new)
-{
-	new->next = stack->head;
-	stack->head = new;
-}
 
 // Takes the first element of stack b and puts it on top of stack a
 void	pa(t_stack *stack_a, t_stack *stack_b)
