@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gjose-fr <gjose-fr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: school <school@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 11:06:36 by g24force          #+#    #+#             */
-/*   Updated: 2025/06/16 16:46:06 by gjose-fr         ###   ########.fr       */
+/*   Updated: 2025/08/19 20:48:41 by school           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ t_node	*stack_get_second_to_last(t_stack *stack);
 // 		***SORTING AND ALGORITHMS***
 
 // sorting.c
-int	is_sorted(t_stack *stack);
+int		is_sorted(t_stack *stack);
+void	sort_three(t_stack *stack_a);
 
 #endif

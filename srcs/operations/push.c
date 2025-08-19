@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gjose-fr <gjose-fr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: school <school@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 11:53:32 by g24force          #+#    #+#             */
-/*   Updated: 2025/06/16 12:10:25 by gjose-fr         ###   ########.fr       */
+/*   Updated: 2025/08/19 20:19:19 by school           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	pa(t_stack *stack_a, t_stack *stack_b)
 	temp = stack_b->head;
 	stack_b->head = stack_b->head->next;
 	stack_b->count--;
+	if (stack_a->count == 0)
+		stack_a->tail = temp;
 	stack_add_top(stack_a, temp);
 	stack_a->count++;
 }
@@ -36,6 +38,8 @@ void	pb(t_stack *stack_a, t_stack *stack_b)
 	temp = stack_a->head;
 	stack_a->head = stack_a->head->next;
 	stack_a->count--;
+	if (stack_b->count == 0)
+		stack_b->tail = temp;
 	stack_add_top(stack_b, temp);
 	stack_b->count++;
 }
